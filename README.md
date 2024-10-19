@@ -40,18 +40,32 @@ Follow these steps to set up the project locally:
 
 3. **Set up environment variables**:
     Create a `.env` file in the root directory and configure it with your own environment variables, including MongoDB URI and NextAuth secrets:
+   
     ```bash
-    NEXT_PUBLIC_MAP_API_KEY=your_google_maps_api_key
-    DATABASE_URL=your_mongodb_connection_string
-    NEXTAUTH_SECRET=your_nextauth_secret
+    # MongoDB Database URL
+      DATABASE_URL="your_mongodb_connection_string"
+
+    # NextAuth Secret for authentication
+      NEXTAUTH_SECRET="your_nextauth_secret_key"
+
+    # GitHub OAuth Credentials
+      GITHUB_CLIENT_ID="your_github_client_id"
+      GITHUB_CLIENT_SECRET="your_github_client_secret"
+ 
+    # Google OAuth Credentials
+      GOOGLE_CLIENT_ID="your_google_client_id"
+      GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+    # Cloudinary Cloud Name (for image management)
+      NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloudinary_cloud_name"
     ```
 
-4. **Run the development server**:
+5. **Run the development server**:
     ```bash
     npm run dev
     ```
 
-5. **Open your browser**:
+6. **Open your browser**:
     Visit [http://localhost:3000](http://localhost:3000) to start using **Creative Nest**.
 
 ---
