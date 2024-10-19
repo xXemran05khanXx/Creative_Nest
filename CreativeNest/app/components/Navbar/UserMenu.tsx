@@ -39,7 +39,7 @@ export const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className='hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neural-100 transition cursor-pointer'
         >
-          Your menu
+          Add Property
         </div>
         <div
           onClick={toggleUserMenu}
@@ -72,7 +72,7 @@ export const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                   onClick={() => router.push('/properties')}
                   label='My properties'
                 />
-                <MenuItem onClick={rentModal.onOpen} label='Airbnb my home' />
+                <MenuItem onClick={() => router.push('/')} label='home page' />
                 <MenuItem onClick={() => signOut()} label='Logout' />
               </>
             ) : (

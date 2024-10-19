@@ -12,8 +12,8 @@ import { SearchModal } from './components/MultiPurpose/Modals/SearchModal'
 const font = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Markee',
-  description: 'New life to start...',
+  title: 'CreativeNest',
+  description: 'Lets Create ...',
 }
 
 export default async function RootLayout({
@@ -34,7 +34,7 @@ export default async function RootLayout({
           <SearchModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className='pb-20 pt-18'>{children}</div>
+        <div className='pb-15 pt-18'>{children}</div>
       </body>
     </html>
   )
