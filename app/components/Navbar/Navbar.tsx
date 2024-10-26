@@ -15,9 +15,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
     <div className='fixed w-full bg-white z-10 shadow-sm'>
       <div className='py-4 border-b-[1px]'>
         <Container>
-          <div className='flex flex-row items-center justify-between gap-3 md:gap-0'>
+          <div className='flex flex-row items-center justify-between gap-4 md:gap-0'>
             <Logo />
             <Search />
+            <div className='align-text-left ' > <span className='font-semibold text-lg'>Welcome ! </span>{currentUser?.name}</div>
             <UserMenu currentUser={currentUser} />
           </div>
         </Container>
